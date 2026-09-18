@@ -2,19 +2,15 @@ from scapy.all import IP, TCP ,ICMP , Ether , srp1
 import time
 
 
-#captura de datos dinamica
 
-print("===========================================================")
 
-print(" 🛡️   MINI NMAP - CONFIGURACIÓN DEL RANGO")
+print("    MINI NMAP - CONFIGURACIÓN DEL RANGO")
 
-print("===========================================================")
 
-#Captura dinamica de la IP objetivo (se lee como string de forma directa)
 ip_objetivo = input("[>] Ingrese la IP objetivi (ej: 192.168.1.1): ")
 
 
-#Captura del rango numerico
+#Captura del rango numerio
 puerto_inicio = int(input("[>] Ingrese el puerto de INICIO (ej: 20): "))
 puerto_fin = int(input("[>] Ingrese el puerto de FIN (ej: 85): "))
 
@@ -22,7 +18,7 @@ puerto_fin = int(input("[>] Ingrese el puerto de FIN (ej: 85): "))
 tiempo_espera=float(input("[>] Ingrese el tiempo de espera por puerto en seg (ej: 0.5): "))
 print("===========================================================\n")
 
-#Estructura del rango numérico de puertos a escanear
+#Estrucura del rango numérico de puertos a escanear
 puertos_a_escanear = range(puerto_inicio,puerto_fin+1)
 
 print(f"[+] Iniciando escaneo de seguridad sobre {ip_objetivo}... ")
